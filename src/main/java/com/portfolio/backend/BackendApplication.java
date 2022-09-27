@@ -23,7 +23,7 @@ public class BackendApplication {
 		@Override
 		public void addCorsMappings(CorsRegistry registry) {
 				registry.addMapping("https://frontend-ap-3ff43.web.app");
-                               
+                              // registry.addMapping("http://localhost:4200");
 			}
 		};
 	}
@@ -34,6 +34,7 @@ public class BackendApplication {
             CorsConfiguration corsConfiguration = new CorsConfiguration();
             corsConfiguration.setAllowCredentials(true);
             corsConfiguration.setAllowedOrigins(Arrays.asList("https://frontend-ap-3ff43.web.app"));
+            // corsConfiguration.setAllowedOrigins(Arrays.asList("http://localhost:4200"));
             corsConfiguration.setAllowedHeaders(Arrays.asList("Origin","Acces-Control-Allow-Origin","Content-Type",
             "Accept","Authorization","Origin, Accept","X-Request-With",
             "Acces-Control-Request-Method","Acces-Control-Request-Headers"));

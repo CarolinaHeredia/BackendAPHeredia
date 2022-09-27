@@ -85,6 +85,7 @@ public class ProyectoController {
         proyecto.setDescription(dtopro.getDescription());
         proyecto.setBuildingDate(dtopro.getBuildingDate());
         proyecto.setUrl_img(dtopro.getUrl_img());
+        proyecto.setLink(dtopro.getLink());
        
         proyectoService.saveProyecto(proyecto);
         return new ResponseEntity(new Mensaje("Proyecto actualizado"), HttpStatus.OK);
